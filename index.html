@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <script src="vendor/angular/angular.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body ng-app="app">
+    <div ng-controller="MainController">
+    	<h1> To Do List </h1>
+    	<ul ng-repeat="item in toDoList">
+    		<li>{{item.name}} <input type="checkbox" ng-click="toggleComplete(item)"/></li>
+    	</ul>
+    	<fieldset>
+    		<input type="textarea" ng-model="item" placeholder="Enter a to do item..."/><br/>
+    		<input type="number" ng-model="priority" min="1" max="10" placeholder="Priority(1-10)"/><br/>
+    		<span>Due Date: <input type="date" ng-model="dueDate" placeholder="Due Date "/></span>
+    	</fieldset>
+    	<button ng-click="add(item,priority,dueDate)">Add Item</button>
+    	<button ng-click="clearList()">Clear List</button>
+    	<div> {{completedItems + "/" + totalItems + " items completed"}} </div>
+    </div>
+    </body>
+</html>

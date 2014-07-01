@@ -1,0 +1,25 @@
+Directions:
+Using AngularJS, implement a to do list app that meets the following requirements:
+
+    1. User must be able to add items to the to do list
+    2. User must be able to view a list of to do items
+    3. Users can mark to do items as complete or incomplete
+    4. Uses can clear the to do list by clicking a button.
+
+
+If you want more practice, implement any of the following features:
+
+    1. Display the number of items that are left to do out of the items that are completed
+    2. Allow users to add priorities to their to do list items, keep the to do list sorted by the priority (descending)
+    3. Allow users to add due dates to their to do list items, keep the to do list sorted by the due date so that the task with the nearest due date is at the top.
+    4. Allow users to add priorities and due dates to their tasks and allow them to sort the list by either priorities or due dates.
+
+
+Tips:
+    * Run the application by opening index.html on your browser
+    * Angular is already linked to the index.html
+    * Don't forget to link any new scripts you create to index.html
+    
+
+Good luck!
+
